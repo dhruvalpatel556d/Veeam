@@ -1,0 +1,55 @@
+{
+	"name": "currencyConverter",
+	"version": "0.0.1",
+	"author": [
+		"Dhruval Patel"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:currencyConverter",
+	"descriptionmsg": "currencyConverter-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"AutoloadClasses": {
+		"currencyConverter": "includes/currencyConverter.php",
+		"SpecialHelloWorld": "includes/SpecialHelloWorld.php"
+	},
+	"config": {
+		"BoilerPlateEnableFoo": {
+			"value": true,
+			"description": "Enables the foo functionality"
+		}
+	},
+	"callback": "currencyConverter::onExtensionLoad",
+	"ExtensionMessagesFiles": {
+		"BoilerPlateAlias": "currencyConverter.i18n.alias.php"
+	},
+	"Hooks": {
+		"NameOfHook": "currencyConverter::onNameOfHook"
+	},
+	"MessagesDirs": {
+		"BoilerPlate": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.boilerPlate.foo": {
+			"scripts": [
+				"currencyConverter/ext.boilerPlate.js",
+				"currencyConverter/ext.boilerPlate.foo.js"
+			],
+			"styles": [
+				"currencyConverter/ext.boilerPlate.foo.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "currencyConverter"
+	},
+	"SpecialPages": {
+		"HelloWorld": "include/SpecialHelloWorld"
+	},
+	"AutoloadClasses": {
+		"BoilerPlateHooks": "include/SpecialHelloWorld.php"
+	},
+	"manifest_version": 2
+}
